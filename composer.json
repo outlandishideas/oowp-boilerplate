@@ -33,7 +33,7 @@
     "johnpbloch/wordpress": "4.7.4",
     "oscarotero/env": "1.0.2",
     "roots/wp-password-bcrypt": "1.0.0",
-    "outlandish/oowp": "2.0.1",
+    "outlandish/oowp": "2.0.2",
     "wpackagist-plugin/advanced-custom-fields": "4.4.11",
     "wpackagist-plugin/posts-to-posts": "1.6.5"
   },

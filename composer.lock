@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6339846ce3121c3f40baf206ee8ffe94",
+    "content-hash": "4a81ff4c54f8b2e8386ed9f0c2d5c688",
     "packages": [
         {
             "name": "composer/installers",
@@ -281,16 +281,16 @@
         },
         {
             "name": "outlandish/oowp",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/outlandishideas/oowp.git",
-                "reference": "c5e139dce89df93349a05d33cb350b181d51026e"
+                "reference": "347244141919c9c819c4e993bc5601806a06d431"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/outlandishideas/oowp/zipball/c5e139dce89df93349a05d33cb350b181d51026e",
-                "reference": "c5e139dce89df93349a05d33cb350b181d51026e",
+                "url": "https://api.github.com/repos/outlandishideas/oowp/zipball/347244141919c9c819c4e993bc5601806a06d431",
+                "reference": "347244141919c9c819c4e993bc5601806a06d431",
                 "shasum": ""
             },
             "require": {
@@ -321,10 +321,10 @@
             ],
             "description": "A plugin for WordPress that makes post types easier to manage",
             "support": {
-                "source": "https://github.com/outlandishideas/oowp/tree/2.0.1",
+                "source": "https://github.com/outlandishideas/oowp/tree/2.0.2",
                 "issues": "https://github.com/outlandishideas/oowp/issues"
             },
-            "time": "2017-04-24T15:40:03+00:00"
+            "time": "2017-04-24T17:16:41+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
