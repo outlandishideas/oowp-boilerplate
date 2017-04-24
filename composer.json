@@ -1,47 +1,41 @@
 {
-  "name": "roots/bedrock",
-  "type": "project",
-  "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
-  "authors": [
-    {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
-    }
-  ],
-  "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
-  ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
+  "name": "outlandish/oowp-boilerplate",
   "config": {
     "preferred-install": "dist"
   },
+  "autoload": {
+    "psr-4": {
+      "Outlandish\\Wordpress\\OowpBoilerplate\\": "web/app/themes/outlandish/src/"
+    }
+  },
+  "type": "project",
+  "homepage": "https://outlandish.com/",
+  "authors": [
+    {
+      "name": "Rasmus Winter",
+      "email": "rasmus@outlandish.com"
+    }
+  ],
   "repositories": [
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/outlandishideas/oowp.git"
     }
   ],
   "require": {
     "php": ">=5.6",
-    "composer/installers": "~1.2.0",
-    "vlucas/phpdotenv": "^2.0.1",
+    "composer/installers": "1.2.0",
+    "vlucas/phpdotenv": "2.4.0",
     "johnpbloch/wordpress": "4.7.4",
-    "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
-  },
-  "require-dev": {
-    "squizlabs/php_codesniffer": "^2.5.1"
+    "oscarotero/env": "1.0.2",
+    "roots/wp-password-bcrypt": "1.0.0",
+    "outlandish/oowp": "2.0.1",
+    "wpackagist-plugin/advanced-custom-fields": "4.4.11",
+    "wpackagist-plugin/posts-to-posts": "1.6.5"
   },
   "extra": {
     "installer-paths": {
@@ -50,10 +44,5 @@
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "web/wp"
-  },
-  "scripts": {
-    "test": [
-      "vendor/bin/phpcs"
-    ]
   }
 }

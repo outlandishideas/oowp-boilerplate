@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e016b1a8ee7a04cb96913da316eae6c4",
+    "content-hash": "6339846ce3121c3f40baf206ee8ffe94",
     "packages": [
         {
             "name": "composer/installers",
@@ -111,7 +111,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13 20:53:52"
+            "time": "2016-08-13T20:53:52+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -150,7 +150,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-04-20 20:49:27"
+            "time": "2017-04-20T20:49:27+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
@@ -187,7 +187,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-04-20 19:59:59"
+            "time": "2017-04-20T19:59:59+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -235,7 +235,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-06-11 15:15:30"
+            "time": "2015-06-11T15:15:30+00:00"
         },
         {
             "name": "oscarotero/env",
@@ -277,7 +277,54 @@
             "keywords": [
                 "env"
             ],
-            "time": "2016-05-08 17:14:32"
+            "time": "2016-05-08T17:14:32+00:00"
+        },
+        {
+            "name": "outlandish/oowp",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/outlandishideas/oowp.git",
+                "reference": "c5e139dce89df93349a05d33cb350b181d51026e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/outlandishideas/oowp/zipball/c5e139dce89df93349a05d33cb350b181d51026e",
+                "reference": "c5e139dce89df93349a05d33cb350b181d51026e",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-muplugin",
+            "autoload": {
+                "psr-4": {
+                    "Outlandish\\Wordpress\\Oowp\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Rasmus Winter",
+                    "email": "ras@outlandish.com"
+                },
+                {
+                    "name": "Tamlyn Rhodes",
+                    "email": "tam@outlandish.com"
+                },
+                {
+                    "name": "Harry Robbins",
+                    "email": "harry@outlandish.com"
+                }
+            ],
+            "description": "A plugin for WordPress that makes post types easier to manage",
+            "support": {
+                "source": "https://github.com/outlandishideas/oowp/tree/2.0.1",
+                "issues": "https://github.com/outlandishideas/oowp/issues"
+            },
+            "time": "2017-04-24T15:40:03+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -334,7 +381,7 @@
             "keywords": [
                 "wordpress wp bcrypt password"
             ],
-            "time": "2016-03-01 16:27:06"
+            "time": "2016-03-01T16:27:06+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -384,89 +431,50 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-09-01 10:05:43"
-        }
-    ],
-    "packages-dev": [
+            "time": "2016-09-01T10:05:43+00:00"
+        },
         {
-            "name": "squizlabs/php_codesniffer",
-            "version": "2.8.1",
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "4.4.11",
             "source": {
-                "type": "git",
-                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d"
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "tags/4.4.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
-                "reference": "d7cf0d894e8aa4c73712ee4a331cc1eaa37cdc7d",
-                "shasum": ""
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.11.zip",
+                "reference": "tags/4.4.11",
+                "shasum": null
             },
             "require": {
-                "ext-simplexml": "*",
-                "ext-tokenizer": "*",
-                "ext-xmlwriter": "*",
-                "php": ">=5.1.2"
+                "composer/installers": "~1.0"
             },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist-plugin/posts-to-posts",
+            "version": "1.6.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/posts-to-posts/",
+                "reference": "tags/1.6.5"
             },
-            "bin": [
-                "scripts/phpcs",
-                "scripts/phpcbf"
-            ],
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                }
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/posts-to-posts.1.6.5.zip",
+                "reference": "tags/1.6.5",
+                "shasum": null
             },
-            "autoload": {
-                "classmap": [
-                    "CodeSniffer.php",
-                    "CodeSniffer/CLI.php",
-                    "CodeSniffer/Exception.php",
-                    "CodeSniffer/File.php",
-                    "CodeSniffer/Fixer.php",
-                    "CodeSniffer/Report.php",
-                    "CodeSniffer/Reporting.php",
-                    "CodeSniffer/Sniff.php",
-                    "CodeSniffer/Tokens.php",
-                    "CodeSniffer/Reports/",
-                    "CodeSniffer/Tokenizers/",
-                    "CodeSniffer/DocGenerators/",
-                    "CodeSniffer/Standards/AbstractPatternSniff.php",
-                    "CodeSniffer/Standards/AbstractScopeSniff.php",
-                    "CodeSniffer/Standards/AbstractVariableSniff.php",
-                    "CodeSniffer/Standards/IncorrectPatternException.php",
-                    "CodeSniffer/Standards/Generic/Sniffs/",
-                    "CodeSniffer/Standards/MySource/Sniffs/",
-                    "CodeSniffer/Standards/PEAR/Sniffs/",
-                    "CodeSniffer/Standards/PSR1/Sniffs/",
-                    "CodeSniffer/Standards/PSR2/Sniffs/",
-                    "CodeSniffer/Standards/Squiz/Sniffs/",
-                    "CodeSniffer/Standards/Zend/Sniffs/"
-                ]
+            "require": {
+                "composer/installers": "~1.0"
             },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Greg Sherwood",
-                    "role": "lead"
-                }
-            ],
-            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
-            "homepage": "http://www.squizlabs.com/php-codesniffer",
-            "keywords": [
-                "phpcs",
-                "standards"
-            ],
-            "time": "2017-03-01 22:17:45"
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/posts-to-posts/"
         }
     ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
